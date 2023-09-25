@@ -45,7 +45,7 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    fetch(action, {
+    fetch("http://localhost:5050/contatti", {
       method: 'POST',
       body: formData,
       headers: { 'X-Requested-With': 'XMLHttpRequest' }
