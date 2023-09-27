@@ -1,34 +1,19 @@
 import React from 'react';
-import Head from './components/Head'
-
-import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import MainIndex from './components/MainIndex';
-import Footer from './components/Footer';
-import Freccia from './components/Freccia';
-import Script from './components/Script';
-
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
 
 function App() {
-  
   return (
     <Router>
-      <div>
-        <Head /> {/* Includi il tuo Head qui */}
-        <Header/>
-        <Hero/>
-        <MainIndex/>
-        <Footer/>
-        <Freccia/>
-        <Script/>
-
-        
-        {/* Altri componenti e routing delle pagine */}
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        {/* Aggiungi altre route, se necessario */}
+      </Routes>
     </Router>
   );
 }
+
 
 export default App;

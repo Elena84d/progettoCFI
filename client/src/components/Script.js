@@ -37,9 +37,9 @@ function Script() {
     script8.src = '/assets/js/main.js';
     document.body.appendChild(script8);
 
-    const script9 = document.createElement('script');
-    script9.src = 'assets/vendor/php-email-form/validate.js';
-    document.body.appendChild(script9);
+   const script9 = document.createElement('script');
+     script9.src = 'assets/vendor/php-email-form/validate.js';
+      document.body.appendChild(script9);
 
 }, []);
 
